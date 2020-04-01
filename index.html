@@ -14,14 +14,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a class="navbar-brand" href="./index.html">
-            Derek Drill Prototypes 
-        </a>
-        <form class="form-inline my-2 my-lg-0">
-            <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-        </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="./index.html">Derek Drill Prototypes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarList" aria-controls="navBarList" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBarList">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="prototypes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Prototypes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="prototypes">
+                        <a class="dropdown-item" href="#">Restaurant POS</a>
+                        <a class="dropdown-item" href="#">Reporting Dashboard</a>
+                        <a class="dropdown-item" href="#">Small Business Website</a>
+                    </div>
+                </li>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+                <hr>
+                <form class="form-inline my-2 my-lg-0 d-lg-none">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+        <input type="text" class="form-control col-3 d-none d-lg-inline" placeholder="Search...">
     </nav>
 </body>
 </html>
